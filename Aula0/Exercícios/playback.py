@@ -6,5 +6,17 @@
     the user for input and then outputs that same input, replacing each space
     with ... (i.e., three periods).
 """
-mensagem = input().replace(' ', '...')
-print(mensagem)
+
+
+def modificar(texto):
+    texto_modificado = texto.replace(' ', '...')
+    return texto_modificado
+
+
+def main():
+    mensagem = input()
+    mensagem = modificar(mensagem)
+    print(mensagem)
+
+
+main()

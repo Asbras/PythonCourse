@@ -8,6 +8,16 @@
  input.
 """
 
-frase = input()
-frase = frase.lower()
-print(frase)
+
+def minuscular(texto):
+    texto = texto.lower()
+    return texto
+
+
+def main():
+    frase = input()
+    frase_minuscula = minuscular(frase)
+    print(frase_minuscula)
+
+
+main()
