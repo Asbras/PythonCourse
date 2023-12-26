@@ -5,11 +5,11 @@
 """
 
 
-def main():
-    dollars = dollar_para_float(input("Qual foi o valor da sua conta? "))
-    porcentagem = porcentagem_para_float(input("Quantos porcento voces gotaria de deixar de gorjeta? "))
+def main(dollar_input, porcentagem_input):
+    dollars = dollar_para_float(dollar_input)
+    porcentagem = porcentagem_para_float(porcentagem_input)
     gorjeta = dollars * porcentagem
-    print(f"Total: $ {gorjeta:.2f}")
+    return f"Total: $ {gorjeta:.2f}"
 
 
 def dollar_para_float(d):
