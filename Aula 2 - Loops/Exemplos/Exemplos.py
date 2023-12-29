@@ -11,13 +11,16 @@ estudantes = {
 
 for estudante in estudantes:
     print(estudante, estudantes[estudante], sep=", ")
-# se a variavel nao for importante pordemos usar _ para sinalizar que só é necessario para contar.
+# se a variavel nao for importante pordemos usar _ para sinalizar que só é
+# necessario para contar.
 for _ in range(3):
     print("meow")
-# voce tambem pode imprimir varias vezes simplesmente "multiplicando" a quantidade de vezes quantidade
-# que voce deseja imprimir
+# voce tambem pode imprimir varias vezes simplesmente "multiplicando" a
+# quantidade de vezes quantidade que voce deseja imprimir
 print("meow\n" * 3, end="")
 #
+
+
 def main():
     numero = receber_numero()
     meow(numero)
