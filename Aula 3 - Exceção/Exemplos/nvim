@@ -1,0 +1,29 @@
+Neste trecho de código, existem vários mapeamentos de teclas (remaps) definidos no editor Vim usando a biblioteca Lua para Vim, 
+chamada Plug-in de Neovim (Nvim). Os remaps permitem a atribuição de novas funções a teclas existentes ou a criação de atalhos para
+comandos específicos.
+
+    1. `<F5>` é mapeado para compilar o código em C usando o comando `gcc`.
+    2. `<F6>` é mapeado para abrir uma nova terminal e executar o arquivo atual.
+    3. A tecla de liderança (space) é definida como `mapleader`, facilitando a utilização de combinações de teclas.
+    4. O comando `Ex` é mapeado para selecionar a pasta que contém o arquivo atual.
+    5. As teclas `J` e `K` são remapeadas para mover textos selecionados para cima ou para baixo.
+    6. A tecla `n` é mapeada para ir para a próxima linha, seguida de dois caracteres `zz`, que é usada para mantê-la na mesma posição 
+    da tela.
+    7. As teclas `<C-d>` e `<C-u>` são remapeadas para mover a tela para baixo e para cima, respectivamente.
+    8. A combinação de teclas `<leader>p` é mapeada para copiar linhas ou textos selecionados.
+    9. As combinações de teclas `<leader>y`, `<leader>Y`, e o comando `d` são usadas para copiar e excluir quantidades de linhas.
+    10. A combinação de teclas `<leader>f` é mapeada para formatar o código atual usando LSP (Language Server Protocol).
+    11. As combinações de teclas `<leader>cw`, `<leader>x`, e `<leader>vpp` são usadas para alterar textos, adicionar permissões de 
+    execução a arquivos, e abrir o gerenciador de pacotes do Vim, respectivamente.
+    12. A combinação de teclas `<leader><leader>` é mapeada para mostrar o conteúdo da configuração atual do Vim (:so).
+    13. A função `CellularAutomaton make_it_rain` é mapeada para `<leader>mr`, que gera um efeito visual legal no terminal.
+
+Para criar outros remaps, você pode seguir esses passos:
+
+    1. Defina uma nova tecla líder, se desejado, usando a variável global `g.mapleader`.
+    2. Use a função `vim.keymap.set()` para definir o mapeamento de teclas desejado. O primeiro parâmetro é o contexto no qual o remap 
+    será definido (n = normal, i = inserção, v = visual, x = ex, c = comando).
+    3. Defina os parâmetros do mapeamento, como silent, noremap, etc.
+    4. Use a string para representar o comando ou função desejada a ser executado quando a tecla for pressionada.
+    5. Salve e reinicie o editor de texto Vim para que os remaps sejam carregados corretamente.
+
